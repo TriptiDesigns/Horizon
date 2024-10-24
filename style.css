@@ -44,3 +44,106 @@ a {
     text-decoration: none;
 }
 
+/* Navbar CSS */
+
+#navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 0 3vw;
+}
+
+.menu {
+    display: flex;
+    padding: 3vw 2vw;
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+
+.logo {
+    padding: 0 3vw;
+}
+
+.cta h4 {
+    position: relative;
+    padding: 15px 25px;
+    border: 2px solid #fc6b0a78;
+    border-radius: 50px;
+    font-weight: 550;
+    font-size: 17px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.cta h4 a {
+    position: relative;
+    z-index: 9;
+}
+
+.cta h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--vibrant-orange);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.cta h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.cta h4:hover a {
+    color: var(--charcoal-black);
+}
+
+.menu p a {
+    color: var(--soft-beige);
+}
+
+.menu p a:hover {
+    color: var(--vibrant-orange);
+    transition: 0.5s ease;
+}
+
+/* Hero Section CSS */
+
+#hero {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 7vw;
+    padding: 1vw;
+    line-height: 7vw;
+}
+
+#hero p {
+    font-size: 1.4vw;
+    font-family: var(--ff-neue-light);
+    letter-spacing: 0.1vw;
+}
+
+#hero p span {
+    color: var(--vibrant-orange);
+    font-family: var(--ff-neue-light);
+    background-color: #ff660022;
+    border-radius: 2vw;
+    padding: 0.3vw 1vw;
+    border: solid 0.2px var(--vibrant-orange);
+}
+
