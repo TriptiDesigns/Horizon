@@ -1,14 +1,12 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 /* Global Variable Declaration */
-
 :root {
-    
-    /* Color */
     --charcoal-black: #111111;      
     --dark-grey: #585757;           
     --soft-beige: #F5ECE4;          
     --vibrant-orange: #FC6A0A;      
     --bright-red: #E74504;
-    
+    --eerie-black: #1F1F1F;
 
     /* Typography */
     --ff-neue-black: 'neue-black', sans-serif;
@@ -20,7 +18,6 @@
 }
 
 /* Reset Properties */
-
 * {
     margin: 0;
     padding: 0;
@@ -42,10 +39,10 @@ html, body {
 
 a {
     text-decoration: none;
+    color: var(--soft-beige);
 }
 
 /* Navbar CSS */
-
 #navbar {
     display: flex;
     position: relative;
@@ -54,6 +51,7 @@ a {
     justify-content: space-between;
     z-index: 100;
     padding: 0 3vw;
+    background-color: var(--charcoal-black);
 }
 
 .menu {
@@ -114,7 +112,6 @@ a {
 }
 
 /* Hero Section CSS */
-
 #hero {
     height: 70vh;
     width: 100%;
@@ -145,5 +142,34 @@ a {
     border-radius: 2vw;
     padding: 0.3vw 1vw;
     border: solid 0.2px var(--vibrant-orange);
+}
+
+#hero-cards {
+    background: var(--eerie-black);
+    height: 45vh;
+    position: relative; 
+}
+
+#hero-cards .text {
+    position: absolute;
+    bottom: 25px; 
+    left: 20px; 
+    color: white; 
+    font-size: 1rem; 
+}
+
+.home-video-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a1a1a;
+}
+
+.video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
