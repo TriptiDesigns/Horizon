@@ -1,0 +1,209 @@
+/* Global Variable Declaration */
+
+:root {
+    --charcoal-black: #111111;      
+    --dark-grey: #585757;           
+    --soft-beige: #F5ECE4;          
+    --vibrant-orange: #FC6A0A;      
+    --bright-red: #E74504;
+    --eerie-black: #1F1F1F;
+
+    /* Typography */
+    --ff-neue-black: 'neue-black', sans-serif;
+    --ff-neue-bold: 'neue-bold', sans-serif;
+    --ff-neue-light: 'neue-light', sans-serif;
+    --ff-neue-medium: 'neue-medium', sans-serif;
+    --ff-neue-roman: 'neue-roman', sans-serif;
+    --ff-neue-thin: 'neue-thin', sans-serif;
+}
+
+/* Reset Properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-neue-medium);
+    color: var(--soft-beige);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    background-color: var(--charcoal-black);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--soft-beige);
+}
+
+/* Navbar CSS */
+
+#navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 0 3vw;
+    background-color: var(--charcoal-black);
+}
+
+.menu {
+    display: flex;
+    padding: 3vw 2.5vw;
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+
+.logo {
+    padding: 0 3vw;
+}
+
+.cta h4 {
+    position: relative;
+    padding: 15px 25px;
+    border: 2px solid #fc6b0a78;
+    border-radius: 50px;
+    font-weight: 550;
+    font-size: 17px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.cta h4 a {
+    position: relative;
+    z-index: 9;
+}
+
+.cta h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--vibrant-orange);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.cta h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.cta h4:hover a {
+    color: var(--charcoal-black);
+}
+
+.menu p a {
+    color: var(--soft-beige);
+}
+
+.menu p a:hover {
+    color: var(--vibrant-orange);
+    transition: 0.5s ease;
+}
+
+/* Contact Header CSS */
+
+#contact {
+    text-align: center;
+    padding: 4vw 2.5vw;
+}
+
+#contact h1 {
+    font-size: 10vw;
+    margin-bottom: 1vw;
+}
+
+#contact .header-text {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+}
+
+#contact .header-text a {
+    color: var(--vibrant-orange);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    margin-top: 2rem;
+    padding: 2.5vw 3vw;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1vw;
+}
+
+.contact-form label {
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.contact-form label span{
+    color: var(--vibrant-orange);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8vw;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 1vw;
+    border-radius: 7px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 0.8vw;
+    background-color: #333;
+    color: var(--soft-beige);
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 7px;
+}
+
+.contact-form button:hover {
+    padding: 0.8vw;
+    background-color: #333333c0;
+    color: var(--soft-beige);
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 7px;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 1vw;
+    width: 30%;
+}
+
+.contact-info .bold-text {
+    font-size: 1.5vw;
+    color: var(--vibrant-orange);
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
