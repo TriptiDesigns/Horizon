@@ -113,97 +113,47 @@ a {
     transition: 0.5s ease;
 }
 
-/* Contact Header CSS */
+/* About Section */
 
-#contact {
+#about {
     text-align: center;
     padding: 4vw 2.5vw;
 }
 
-#contact h1 {
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* About Section CSS */
+
+#about {
+    text-align: center;
+    padding: 3vw 7vw;
+}
+
+#about h1 {
     font-size: 8vw;
     margin-bottom: 0.7vw;
 }
 
-#contact .header-text {
+#about .header-text {
     font-size: 1.25vw;
-    margin: 0.5vw 0;
-}
-
-#contact .header-text a {
-    color: var(--vibrant-orange);
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 3vw;
-    margin-top: 2rem;
-    padding: 2.5vw 3vw;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 1vw;
-}
-
-.contact-form label {
-    font-size: 1.2vw;
-    text-align: left;
-}
-
-.contact-form label span{
-    color: var(--vibrant-orange);
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 0.8vw;
-    background-color: #1e1e1e;
-    border: 1px solid #333;
-    color: #fff;
-    font-size: 1vw;
-    border-radius: 7px;
-}
-
-.contact-form textarea {
-    height: 100px;
-}
-
-.contact-form button {
-    padding: 0.8vw;
-    background-color: #333;
-    color: var(--soft-beige);
-    border: none;
-    cursor: pointer;
-    font-size: 1vw;
-    border-radius: 7px;
-}
-
-.contact-form button:hover {
-    padding: 0.8vw;
-    background-color: #333333c0;
-    color: var(--soft-beige);
-    border: none;
-    cursor: pointer;
-    font-size: 1vw;
-    border-radius: 7px;
-}
-
-.contact-info {
-    text-align: left;
-    font-size: 1vw;
-    width: 30%;
-}
-
-.contact-info .bold-text {
-    font-size: 1.5vw;
-    color: var(--vibrant-orange);
-}
-
-.contact-info p {
-    margin: 0.5rem 0;
+    margin: 1vw 0;
+    text-align: center;
 }
 

@@ -155,7 +155,7 @@ a {
     position: relative;
     width: 100%;
     border-radius: 35px;
-    margin-top: 5vw;
+    margin: 6vw 0;
     border: 0.5px solid #f5ece496;
 }
 
@@ -167,6 +167,10 @@ a {
 
 /* Figures Grid CSS */
 
+#figures{
+    padding-top: 3vw;
+}
+
 #hero-cards {
     background: var(--eerie-black);
     height: 45vh;
@@ -177,8 +181,13 @@ a {
     position: absolute;
     bottom: 25px; 
     left: 20px; 
-    color: white; 
-    font-size: 1rem; 
+    color: #f5ece4ce; 
+    font-size: 1vw; 
+}
+
+#hero-cards h1{
+    color: var(--soft-beige);
+    font-family: var(--ff-neue-bold);
 }
 
 
