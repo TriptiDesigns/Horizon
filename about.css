@@ -141,19 +141,4 @@ a {
 
 /* About Section CSS */
 
-#about {
-    text-align: center;
-    padding: 3vw 7vw;
-}
-
-#about h1 {
-    font-size: 8vw;
-    margin-bottom: 0.7vw;
-}
-
-#about .header-text {
-    font-size: 1.25vw;
-    margin: 1vw 0;
-    text-align: center;
-}
 
