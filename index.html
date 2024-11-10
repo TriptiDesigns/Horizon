@@ -26,11 +26,11 @@
       <a href="">Logo</a>
     </div>
     <div class="menu">
-      <p><a href="">About</a></p>
-      <p><a href="work.html">Work</a></p>
-      <p><a href="">Services</a></p>
-      <p><a href="">Blogs</a></p>
-      <p><a href="">Contact</a></p>
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./work.html">Work</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./services.html">Blogs</a></p>
+      <p><a href="./contact.html">Contact</a></p>
     </div>
     <div class="cta">
       <h4><a href="">Call to Action</a></h4>
@@ -52,10 +52,58 @@
     </div>
   </section>
 
+    <!-- 4 Steps Website Section -->
+    <section id="foursteps">
+        <div class="header">
+            <h1>Four steps to build a website<br>that needs no introduction</h1>
+            <p>See how we turn your abstract ideas into tangible results</p>
+        </div>
+
+        <div class="process-container">
+            <div class="step-card">
+                <div class="step-label">Step 1</div>
+                <div class="step-title">User centric</div>
+                <div class="step-subtitle">design with Figma</div>
+                <div class="preview-box">
+                    <img src="https://placehold.co/400" alt="Figma design interface">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-label">Step 2</div>
+                <div class="step-title">Scalable build</div>
+                <div class="step-subtitle">in Webflow</div>
+                <div class="preview-box">
+                    <img src="https://placehold.co/400" alt="Webflow interface">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-label">Step 3</div>
+                <div class="step-title">Unmatched Online</div>
+                <div class="step-subtitle">presence with SEO</div>
+                <div class="preview-box">
+                    <img src="https://placehold.co/400" alt="SEO metrics">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-label">Step 4</div>
+                <div class="step-title">Take your site live</div>
+                <div class="step-subtitle">confidently</div>
+                <div class="preview-box">
+                    <img src="https://placehold.co/400" alt="Deployment progress">
+                </div>
+            </div>
+        </div>
+    </section>
+    
   <!-- Video Section -->
-  <div class="container home-video-container">
-    <video src="src/home-marketing.mp4" class="video-player" autoplay loop muted></video>
-  </div>
+  <section id="video">
+    <div class="container home-video-container">
+        <video src="src/home-marketing.mp4" class="video-player" autoplay loop muted></video>
+    </div>
+  </section>
 
   <!-- Figures Grid Section -->
   <div class="container mt-5">
@@ -81,7 +129,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container grid-layout">
     <div class="row">
       <div id="hero-cards" class="col rounded p-4 m-1">
         <span class="text">
@@ -99,6 +147,7 @@
     </div>
   </div>
 
+  <!-- Overlay Section -->
   <section id="overlay-section">
     <div class="overlay-image"></div>
     <div class="main-text">
@@ -114,12 +163,14 @@
     </div>
   </section>
 
-  <div class="container outcomes-container mt-5">
+  <!-- 3 by 3 grid Section -->
+  <section id="three-by-three-grid">
+    <div class="container outcomes-container mt-5">
     <div class="row outcomes-row">
       <p class="outcomes-head" style="
             padding-right: 30%;
             font-family: var(--ff-neue-medium);
-            font-size: 1.5rem;
+            font-size: 1.5vw;
           ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab,
         quo voluptatem inventore repellat ducimus laborum placeat harum facere
@@ -213,43 +264,49 @@
         </div>
       </div>
     </div>
+  </section>
+  
 
+  <!-- Testimonials / Carousel Section -->
+  <section id="testimonial">
     <div>
-      <h1 style="text-align: center; font-size: 5vw;font-family: var(--ff-neue-medium);" class="mb-5">Our Testimonials
+      <h1 style="text-align: center; font-size: 5.5vw; font-family: var(--ff-neue-medium);" class="mb-5">Our Testimonials
       </h1>
-      <p style="font-size: 1.5vw;font-family: var(--ff-neue-roman);" class="pb-5">
+      <p style="font-size: 1.5vw; font-family: var(--ff-neue-light);" class="pb-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime minus, suscipit id quasi excepturi possimus
         assumenda harum omnis laudantium animi iusto aperiam at quidem voluptates facere modi blanditiis perferendis
         voluptatum cum necessitatibus. Nulla, ex dolores deserunt sequi non alias!
       </p>
-      <div class="carousel my-5">
+      <div class="carousel">
         <div class="carousel__control carousel__control--prev">&#10094;</div>
         <div class="carousel__stage">
           <div class="carousel__item">
-            <h1>ICELAND</h1>
-            <p>“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious...</p>
-            <p style="text-align: right;">– Carolyn Bain</p>
+            <h2>ICELAND</h2>
+            <p style="font-family: var(--ff-neue-medium);">“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious...</p>
+            <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Carolyn Bain</p>
           </div>
           <div class="carousel__item">
-            <h1>CHINA</h1>
-            <p>“Its modern face is dazzling, but China is no one-trick pony...</p>
-            <p style="text-align: right;">– Damian Harper</p>
+            <h2>CHINA</h2>
+            <p style="font-family: var(--ff-neue-medium);">“Its modern face is dazzling, but China is no one-trick pony...</p>
+            <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Damian Harper</p>
           </div>
           <div class="carousel__item">
-            <h1>USA</h1>
-            <p>“When it comes to travel, America has always floored me with its staggering range of possibilities...</p>
-            <p style="text-align: right;">– Regis St Louis</p>
+            <h2>USA</h2>
+            <p style="font-family: var(--ff-neue-medium);">“When it comes to travel, America has always floored me with its staggering range of possibilities...</p>
+            <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Regis St Louis</p>
           </div>
           <div class="carousel__item">
-            <h1>PERU</h1>
-            <p>“For me, Peru is the molten core of South America...</p>
-            <p style="text-align: right;">– Carolyn McCarthy</p>
+            <h2>PERU</h2>
+            <p style="font-family: var(--ff-neue-medium);">“For me, Peru is the molten core of South America...</p>
+            <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Carolyn McCarthy</p>
           </div>
         </div>
         <div class="carousel__control carousel__control--next">&#10095;</div>
       </div>
     </div>
-
+  </section>
+    
+  <!-- Footer Section -->
     <div class="container my-5 py-5 border-top">
       <div class="row">
         <div class="col-8 mb-5">
@@ -262,10 +319,10 @@
               <h4><a href="">Call to Action</a></h4>
             </div>
           </div>
+          <br>
           <div>
             <span style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">OUR LOCATION:</span>
-            <p style="font-size: 2rem;">630 Mason St.</p>
-            <p style="font-size: 2.25rem;">San Francisco,<br> CA 94108</p>
+            <p style="font-size: 2rem;">630 Mason St. San Francisco,<br> CA 94108</p>
           </div>
         </div>
       </div>
@@ -332,5 +389,4 @@
       </script>
       <script src="script.js"></script>
 </body>
-
 </html>
