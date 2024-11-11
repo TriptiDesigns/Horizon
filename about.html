@@ -345,12 +345,14 @@
             <div id="hero-cards" class="col rounded p-4 m-1">
                 <span class="text">
                     <h1>Best AI Innovation</h1>
+                    <br>
                     MarTech Awards 2023
                 </span>
             </div>
             <div id="hero-cards" class="col rounded p-4 m-1">
                 <span class="text">
                     <h1>Learning Hub</h1>
+                    <br><br>
                     Continuous professional<br />development
                 </span>
             </div>
@@ -361,9 +363,6 @@
                 </span>
             </div>
             <div id="hero-cards" class="col rounded p-4 m-1">
-                <p style="font-family: var(--ff-neue-roman);padding: 5%;">Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. In repudiandae quasi maiores dicta minima. Necessitatibus omnis quas ipsum ea
-                    dolore!</p>
                 <span class="text">
                     <h1>Work-Life Balance</h1>
                     Flexible schedules and<br />remote-first approach
@@ -442,6 +441,28 @@
         </div>
     </footer>
 
+    <!-- JavaScript for hamburger menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const body = document.querySelector('body');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

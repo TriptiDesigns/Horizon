@@ -63,4 +63,26 @@
     <h1 class="text">Blog Page is Under Development &hearts;</h1>
   </div>
 
+  <!-- JavaScript for hamburger menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const body = document.querySelector('body');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        body.style.overflow = 'auto';
+      });
+    });
+  </script>
 </body>
