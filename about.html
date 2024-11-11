@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>About Us | Agency Horizon</title>
+    <title>About Us - Agency Horizon | Beyond the Horizon of Innovation</title>
     <meta name="title" content="About Us | Agency Horizon" />
     <meta name="description"
         content="Learn about Agency Horizon's journey, values, and expertise in digital marketing." />
 
     <!-- Style Sheet Link -->
     <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Neue Haas Grotesk Display Pro/font.css" />
 </head>
 
@@ -20,17 +21,37 @@
     <!-- Navbar Section -->
     <nav id="navbar">
         <div class="logo">
-            <a href="index.html">Logo</a>
+            <h2><a href="./index.html">Horizon</a></h2>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div class="menu">
-            <p><a href="about.html" style="color: var(--vibrant-orange)">About</a></p>
-            <p><a href="work.html">Work</a></p>
-            <p><a href="">Services</a></p>
-            <p><a href="">Blogs</a></p>
-            <p><a href="">Contact</a></p>
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./work.html">Work</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./blogs.html">Blogs</a></p>
+            <p><a href="./contact.html">Contact</a></p>
         </div>
+
         <div class="cta">
-            <h4><a href="">Call to Action</a></h4>
+            <h4><a href="">Book A Call</a></h4>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./work.html">Work</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./services.html">Blogs</a></p>
+            <p><a href="./contact.html">Contact</a></p>
+            <div class="cta">
+                <h4><a href="">Book A Call</a></h4>
+            </div>
         </div>
     </nav>
 
@@ -38,8 +59,7 @@
     <section id="hero">
         <div class="hero-text">
             <p>Our Story</p>
-            <h1
-                style="background-image: linear-gradient(to right, #fc6a0a, #f5ece4);-webkit-background-clip: text;color: transparent;">
+            <h1>
                 Pioneering Digital<br />
                 Excellence Since 2018
             </h1>
@@ -342,69 +362,75 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="container my-5 py-5 border-top">
-        <div class="row">
-            <div class="col-8 mb-5">
-                <h1 style="font-size: 5vw;">Ready to Transform<br>Your Digital Presence?</h1>
-            </div>
-            <div class="col-4">
-                <div>
-                    <span style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">GET IN TOUCH:</span>
-                    <div class="cta my-3" style="width: fit-content;">
-                        <h4><a href="">Contact Us</a></h4>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Contact Section -->
+            <div class="row mb-5">
+                <div class="col-12 col-md-8 mb-4 mb-md-0">
+                    <h1>Have a project in mind?<br>Contact Us!</h1>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <div class="mb-4">
+                        <span class="text-uppercase"
+                            style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">LET'S
+                            CONNECT:</span>
+                        <br>
+                        <div class="cta my-3 d-inline-block">
+                            <h4><a href="">Book A Call</a></h4>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-uppercase"
+                            style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">OUR
+                            LOCATION:</span>
+                        <p class="location-text">630 Mason St. San Francisco,<br> CA 94108</p>
                     </div>
                 </div>
-                <div>
-                    <span style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">VISIT US:</span>
-                    <p style="font-size: 2rem;">630 Mason St.</p>
-                    <p style="font-size: 2.25rem;">San Francisco,<br> CA 94108</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row py-5">
+                <div class="col-6 col-md-3 mb-4">
+                    <h3>UI/UX DESIGN:</h3>
+                    <p>UX Audit</p>
+                    <p>UI Design</p>
+                    <p>UX Design</p>
+                    <p>UX Research</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <h3>PRODUCT DESIGN:</h3>
+                    <p>🔥 AI & ML</p>
+                    <p>SaaS</p>
+                    <p>Web App</p>
+                    <p>Mobile App</p>
+                    <p>Website Design</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <h3>AGENCY:</h3>
+                    <p><a href="#">OUR STORY</a></p>
+                    <p><a href="#">CAREERS</a></p>
+                    <p><a href="#">MVP</a></p>
+                    <p><a href="#">TERMS OF SERVICES</a></p>
+                    <p><a href="#">PRIVACY POLICY</a></p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <h3>OUR SOCIAL:</h3>
+                    <p><a href="#">LINKEDIN</a></p>
+                    <p><a href="#">FACEBOOK</a></p>
+                    <p><a href="#">INSTAGRAM</a></p>
+                    <p><a href="#">DRIBBBLE</a></p>
+                    <p><a href="#">BEHANCE</a></p>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-3">
-                <h3>UI/UX DESIGN:</h3>
-                <p>UX Audit</p>
-                <p>UI Design</p>
-                <p>UX Design</p>
-                <p>UX Research</p>
-            </div>
-            <div class="col-3">
-                <h3>PRODUCT DESIGN:</h3>
-                <p>🔥 AI & ML</p>
-                <p>SaaS</p>
-                <p>Web App</p>
-                <p>Mobile App</p>
-                <p>Website Design</p>
-            </div>
-            <div class="col-3">
-                <h3>AGENCY:</h3>
-                <p><a href="#">OUR STORY</a></p>
-                <p><a href="#">CAREERS</a></p>
-                <p><a href="#">MVP</a></p>
-                <p><a href="#">TERMS OF SERVICES</a></p>
-                <p><a href="#">PRIVACY POLICY</a></p>
-            </div>
-            <div class="col-3">
-                <h3>OUR SOCIAL:</h3>
-                <p><a href="#">LINKEDIN</a></p>
-                <p><a href="#">FACEBOOK</a></p>
-                <p><a href="#">INSTAGRAM</a></p>
-                <p><a href="#">DRIBBBLE</a></p>
-                <p><a href="#">BEHANCE</a></p>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom d-flex justify-content-between align-items-center">
+                <p class="mb-0">Lazarev. — AI + Product Design Agency.</p>
+                <p class="mb-0">All Rights Reserved © 2024</p>
             </div>
         </div>
-
-        <div class="d-flex justify-content-evenly align-items-center py-2 border-top" style="height: 100px;">
-            <p class="mb-0">Lazarev. — AI + Product Design Agency.</p>
-            <p class="mb-0">All Rights Reserved © 2024</p>
-        </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

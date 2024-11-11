@@ -255,6 +255,10 @@
   margin-bottom: 10vw;
 }
 
+#three-by-three-grid .container .row .outcomes-head {
+  font-size: 1.5vw;
+}
+
 #three-by-three-grid .card-text {
   font-family: var(--ff-neue-light);
   letter-spacing: 0.05vw;
