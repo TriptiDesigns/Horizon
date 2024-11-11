@@ -82,7 +82,7 @@
     <!-- Journey Timeline -->
     <div class="container my-5 py-5">
         <h1 style="text-align: center; font-size: 5vw;" class="mb-5">Our Journey</h1>
-        <div class="row">
+        <div class="row journey-timeline">
             <div id="hero-cards" class="col rounded p-4 m-1">
                 <span class="text">
                     <h1>2018</h1>
@@ -272,42 +272,119 @@
     </section>
 
     <!-- Team Section -->
-    <div class="container my-5 py-5">
-        <h1 style="text-align: center; font-size: 5vw;" class="mb-5">Meet Our Team</h1>
-        <div class="row">
-            <div class="col-xs-12 col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Leadership">
-                    <div class="card-body">
-                        <h5 class="card-title">Leadership</h5>
-                        <p class="card-text">Industry veterans with decades of combined experience in digital marketing
-                            and
-                            technology.</p>
+    <section class="team-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header text-center mb-5">
+                <span class="subtitle">Our Experts</span>
+                <h1 class="gradient-text">Meet Our Team</h1>
+                <p class="section-description">
+                    Passionate experts committed to delivering exceptional results
+                </p>
+            </div>
+
+            <!-- Team Cards -->
+            <div class="row g-4">
+                <!-- Leadership Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/400/300" alt="Sarah Chen - CEO">
+                            <div class="overlay">
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="role-badge leadership">Leadership</span>
+                            <h3 class="member-name">Sarah Chen</h3>
+                            <p class="member-position">Chief Executive Officer</p>
+                            <p class="member-bio">Former Google executive with 15+ years of experience in digital
+                                transformation and AI innovation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Lead Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/400/300" alt="Marcus Rodriguez - Design Lead">
+                            <div class="overlay">
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="role-badge design">Design</span>
+                            <h3 class="member-name">Marcus Rodriguez</h3>
+                            <p class="member-position">Creative Director</p>
+                            <p class="member-bio">Award-winning designer with expertise in UX/UI and brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Lead Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/400/300" alt="Aisha Patel - Tech Lead">
+                            <div class="overlay">
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="role-badge technology">Technology</span>
+                            <h3 class="member-name">Aisha Patel</h3>
+                            <p class="member-position">Chief Technology Officer</p>
+                            <p class="member-bio">AI/ML expert with PhD in Computer Science. Pioneering our AI-driven
+                                solutions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Designers">
-                    <div class="card-body">
-                        <h5 class="card-title">Designers</h5>
-                        <p class="card-text">Creative minds crafting beautiful, functional, and user-centric digital
-                            experiences.</p>
+
+            <!-- Team Stats -->
+            <div class="team-stats row mt-5 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label">Team Members</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="stat-number">12</h3>
+                        <p class="stat-label">Countries</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="stat-number">45%</h3>
+                        <p class="stat-label">Women in Tech</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="stat-number">15+</h3>
+                        <p class="stat-label">Languages Spoken</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Developers">
-                    <div class="card-body">
-                        <h5 class="card-title">Developers</h5>
-                        <p class="card-text">Tech wizards building robust, scalable solutions using cutting-edge
-                            technologies.</p>
-                    </div>
-                </div>
+
+            <!-- Join Team CTA -->
+            <div class="text-center mt-5">
+                <a href="#" class="cta-button">Join Our Team</a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Culture Section -->
     <div class="container my-5 py-5">
@@ -320,7 +397,7 @@
                 </p>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 mission-cards">
             <div id="hero-cards" class="col rounded p-4 m-1">
                 <span class="text">
                     <h1>Innovation Days</h1>
