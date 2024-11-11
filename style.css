@@ -128,11 +128,11 @@ a {
 .hamburger span {
   display: block;
   width: 25px;
-  height: 3px;
-  margin: 5px 0;
+  height: 2px; 
+  margin: 5px auto; 
   background: var(--soft-beige);
   transition: all 0.3s ease-in-out;
-}
+  border-radius: 1px; }
 
 /* Mobile Menu Styles */
 .mobile-menu {
@@ -155,15 +155,16 @@ a {
 
 /* Hamburger Animation */
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
   opacity: 0;
+  transform: translateX(-20px);
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Responsive Media Queries */
