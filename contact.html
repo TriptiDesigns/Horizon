@@ -25,6 +25,11 @@
         <div class="logo">
             <a href="">Logo</a>
         </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="menu">
             <p><a href="">About</a></p>
             <p><a href="">Work</a></p>
@@ -89,5 +94,19 @@
         </section>
     </main>
 
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('#navbar')) {
+                document.querySelector('.menu').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

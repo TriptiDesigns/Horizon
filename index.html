@@ -11,6 +11,7 @@
   <meta name="description" content="A marketing agency's website." />
 
   <!-- Style Sheet Link -->
+  <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./style.css" />
 
   <!-- Custom Font Link -->
@@ -21,10 +22,18 @@
 
 <body>
   <!-- Navbar Section -->
+  <!-- Updated Navbar HTML -->
   <nav id="navbar">
     <div class="logo">
-      <a href="">Logo</a>
+      <h2><a href="">Horizon</a></h2>
     </div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="menu">
       <p><a href="./about.html">About</a></p>
       <p><a href="./work.html">Work</a></p>
@@ -32,8 +41,21 @@
       <p><a href="./services.html">Blogs</a></p>
       <p><a href="./contact.html">Contact</a></p>
     </div>
+
     <div class="cta">
-      <h4><a href="">Call to Action</a></h4>
+      <h4><a href="">Book A Call</a></h4>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./work.html">Work</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./services.html">Blogs</a></p>
+      <p><a href="./contact.html">Contact</a></p>
+      <div class="cta">
+        <h4><a href="">Call to Action</a></h4>
+      </div>
     </div>
   </nav>
 
@@ -52,56 +74,56 @@
     </div>
   </section>
 
-    <!-- 4 Steps Website Section -->
-    <section id="foursteps">
-        <div class="header">
-            <h1>Four steps to build a website<br>that needs no introduction</h1>
-            <p>See how we turn your abstract ideas into tangible results</p>
+  <!-- 4 Steps Website Section -->
+  <section id="foursteps">
+    <div class="header">
+      <h1>Four steps to build a website<br>that needs no introduction</h1>
+      <p>See how we turn your abstract ideas into tangible results</p>
+    </div>
+
+    <div class="process-container">
+      <div class="step-card">
+        <div class="step-label">Step 1</div>
+        <div class="step-title">User centric</div>
+        <div class="step-subtitle">design with Figma</div>
+        <div class="preview-box">
+          <img src="https://placehold.co/400" alt="Figma design interface">
         </div>
+      </div>
 
-        <div class="process-container">
-            <div class="step-card">
-                <div class="step-label">Step 1</div>
-                <div class="step-title">User centric</div>
-                <div class="step-subtitle">design with Figma</div>
-                <div class="preview-box">
-                    <img src="https://placehold.co/400" alt="Figma design interface">
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-label">Step 2</div>
-                <div class="step-title">Scalable build</div>
-                <div class="step-subtitle">in Webflow</div>
-                <div class="preview-box">
-                    <img src="https://placehold.co/400" alt="Webflow interface">
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-label">Step 3</div>
-                <div class="step-title">Unmatched Online</div>
-                <div class="step-subtitle">presence with SEO</div>
-                <div class="preview-box">
-                    <img src="https://placehold.co/400" alt="SEO metrics">
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-label">Step 4</div>
-                <div class="step-title">Take your site live</div>
-                <div class="step-subtitle">confidently</div>
-                <div class="preview-box">
-                    <img src="https://placehold.co/400" alt="Deployment progress">
-                </div>
-            </div>
+      <div class="step-card">
+        <div class="step-label">Step 2</div>
+        <div class="step-title">Scalable build</div>
+        <div class="step-subtitle">in Webflow</div>
+        <div class="preview-box">
+          <img src="https://placehold.co/400" alt="Webflow interface">
         </div>
-    </section>
-    
+      </div>
+
+      <div class="step-card">
+        <div class="step-label">Step 3</div>
+        <div class="step-title">Unmatched Online</div>
+        <div class="step-subtitle">presence with SEO</div>
+        <div class="preview-box">
+          <img src="https://placehold.co/400" alt="SEO metrics">
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-label">Step 4</div>
+        <div class="step-title">Take your site live</div>
+        <div class="step-subtitle">confidently</div>
+        <div class="preview-box">
+          <img src="https://placehold.co/400" alt="Deployment progress">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Video Section -->
   <section id="video">
     <div class="container home-video-container">
-        <video src="src/home-marketing.mp4" class="video-player" autoplay loop muted></video>
+      <video src="src/home-marketing.mp4" class="video-player" autoplay loop muted></video>
     </div>
   </section>
 
@@ -166,111 +188,121 @@
   <!-- 3 by 3 grid Section -->
   <section id="three-by-three-grid">
     <div class="container outcomes-container mt-5">
-    <div class="row outcomes-row">
-      <p class="outcomes-head" style="
+      <div class="row outcomes-row">
+        <p class="outcomes-head" style="
             padding-right: 30%;
             font-family: var(--ff-neue-medium);
             font-size: 1.5vw;
           ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab,
-        quo voluptatem inventore repellat ducimus laborum placeat harum facere
-        pariatur quae aliquid, voluptate consequuntur magnam enim earum
-        nesciunt, minus illum.
-      </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab,
+          quo voluptatem inventore repellat ducimus laborum placeat harum facere
+          pariatur quae aliquid, voluptate consequuntur magnam enim earum
+          nesciunt, minus illum.
+        </p>
 
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 1</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 1</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 2</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 3</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 2</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 4</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 5</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 6</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 3</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 7</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 8</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Column 9</h5>
+                  <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 4</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
+          <div class="row">
+            <div class="cta">
+              <h4 style="text-align: center;"><a href="">All Outcomes</a></h4>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 5</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 6</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 7</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 8</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Column 9</h5>
-                <p class="card-text">Adipisicing elit. Reiciendis officia alias recusandae cumque veniam sunt eius.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="cta">
-            <h4 style="text-align: center;"><a href="">All Outcomes</a></h4>
           </div>
         </div>
       </div>
-    </div>
   </section>
-  
+
 
   <!-- Testimonials / Carousel Section -->
   <section id="testimonial">
     <div>
-      <h1 style="text-align: center; font-size: 5.5vw; font-family: var(--ff-neue-medium);" class="mb-5">Our Testimonials
+      <h1 style="text-align: center; font-size: 5.5vw; font-family: var(--ff-neue-medium);" class="mb-5">Our
+        Testimonials
       </h1>
       <p style="font-size: 1.5vw; font-family: var(--ff-neue-light);" class="pb-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime minus, suscipit id quasi excepturi possimus
@@ -282,17 +314,20 @@
         <div class="carousel__stage">
           <div class="carousel__item">
             <h2>ICELAND</h2>
-            <p style="font-family: var(--ff-neue-medium);">“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious...</p>
+            <p style="font-family: var(--ff-neue-medium);">“As I flew north to begin my third circuit of Iceland in four
+              years, I was slightly anxious...</p>
             <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Carolyn Bain</p>
           </div>
           <div class="carousel__item">
             <h2>CHINA</h2>
-            <p style="font-family: var(--ff-neue-medium);">“Its modern face is dazzling, but China is no one-trick pony...</p>
+            <p style="font-family: var(--ff-neue-medium);">“Its modern face is dazzling, but China is no one-trick
+              pony...</p>
             <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Damian Harper</p>
           </div>
           <div class="carousel__item">
             <h2>USA</h2>
-            <p style="font-family: var(--ff-neue-medium);">“When it comes to travel, America has always floored me with its staggering range of possibilities...</p>
+            <p style="font-family: var(--ff-neue-medium);">“When it comes to travel, America has always floored me with
+              its staggering range of possibilities...</p>
             <p style="text-align: center; color: var(--vibrant-orange); opacity: 0.8;">– Regis St Louis</p>
           </div>
           <div class="carousel__item">
@@ -305,36 +340,42 @@
       </div>
     </div>
   </section>
-    
+
   <!-- Footer Section -->
-    <div class="container my-5 py-5 border-top">
-      <div class="row">
-        <div class="col-8 mb-5">
-          <h1 style="font-size: 5vw;">Have a project in mind?<br>Contact Us!</h1>
+  <footer class="footer">
+    <div class="container">
+      <!-- Contact Section -->
+      <div class="row mb-5">
+        <div class="col-12 col-md-8 mb-4 mb-md-0">
+          <h1>Have a project in mind?<br>Contact Us!</h1>
         </div>
-        <div class="col-4">
-          <div>
-            <span style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">LET'S CONNECT:</span>
-            <div class="cta my-3" style="width: fit-content;">
-              <h4><a href="">Call to Action</a></h4>
+        <div class="col-12 col-md-4 ">
+          <div class="mb-4">
+            <span class="text-uppercase" style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">LET'S
+              CONNECT:</span>
+            <br>
+            <div class="cta my-3 d-inline-block">
+              <h4><a href="">Book A Call</a></h4>
             </div>
           </div>
-          <br>
           <div>
-            <span style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">OUR LOCATION:</span>
-            <p style="font-size: 2rem;">630 Mason St. San Francisco,<br> CA 94108</p>
+            <span class="text-uppercase" style="font-family: var(--ff-neue-medium); color: var(--dark-grey);">OUR
+              LOCATION:</span>
+            <p class="location-text">630 Mason St. San Francisco,<br> CA 94108</p>
           </div>
         </div>
       </div>
+
+      <!-- Services Grid -->
       <div class="row py-5">
-        <div class="col-3">
+        <div class="col-6 col-md-3 mb-4">
           <h3>UI/UX DESIGN:</h3>
           <p>UX Audit</p>
           <p>UI Design</p>
           <p>UX Design</p>
           <p>UX Research</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3 mb-4">
           <h3>PRODUCT DESIGN:</h3>
           <p>🔥 AI & ML</p>
           <p>SaaS</p>
@@ -342,7 +383,7 @@
           <p>Mobile App</p>
           <p>Website Design</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3 mb-4">
           <h3>AGENCY:</h3>
           <p><a href="#">OUR STORY</a></p>
           <p><a href="#">CAREERS</a></p>
@@ -350,7 +391,7 @@
           <p><a href="#">TERMS OF SERVICES</a></p>
           <p><a href="#">PRIVACY POLICY</a></p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3 mb-4">
           <h3>OUR SOCIAL:</h3>
           <p><a href="#">LINKEDIN</a></p>
           <p><a href="#">FACEBOOK</a></p>
@@ -360,33 +401,60 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-evenly align-items-center py-2 border-top" style="height: 100px;">
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex justify-content-between align-items-center">
         <p class="mb-0">Lazarev. — AI + Product Design Agency.</p>
         <p class="mb-0">All Rights Reserved © 2024</p>
       </div>
+    </div>
+  </footer>
 
-      <script>
-        const carouselStage = document.querySelector('.carousel__stage');
-        const items = document.querySelectorAll('.carousel__item');
-        const prevButton = document.querySelector('.carousel__control--prev');
-        const nextButton = document.querySelector('.carousel__control--next');
-        let currentIndex = 0;
+  <script>
+    const carouselStage = document.querySelector('.carousel__stage');
+    const items = document.querySelectorAll('.carousel__item');
+    const prevButton = document.querySelector('.carousel__control--prev');
+    const nextButton = document.querySelector('.carousel__control--next');
+    let currentIndex = 0;
 
-        function updateCarousel() {
-          const offset = -currentIndex * 100;
-          carouselStage.style.transform = `translateX(${offset}%)`;
-        }
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carouselStage.style.transform = `translateX(${offset}%)`;
+    }
 
-        prevButton.addEventListener('click', () => {
-          currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-          updateCarousel();
-        });
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+      updateCarousel();
+    });
 
-        nextButton.addEventListener('click', () => {
-          currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-          updateCarousel();
-        });
-      </script>
-      <script src="script.js"></script>
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+  </script>
+
+  <!-- JavaScript for hamburger menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const body = document.querySelector('body');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        body.style.overflow = 'auto';
+      });
+    });
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
