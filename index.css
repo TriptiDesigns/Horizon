@@ -14,8 +14,9 @@
 }
 
 #hero p {
-  font-size: 1rem;
+  font-size: 1vw;
   letter-spacing: 0.05rem;
+  font-family: var(--ff-neue-light);
 }
 
 #hero p span {
@@ -24,7 +25,8 @@
   background-color: #ff660022;
   border-radius: 2vw;
   padding: 0.3vw 1vw;
-  border: solid 0.2px var(--vibrant-orange);}
+  border: solid 0.2px var(--vibrant-orange);
+}
 
 @media (min-width: 768px) and (orientation: landscape) {
   #hero {
@@ -144,7 +146,7 @@
 
   .step-card::after {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     right: -2rem;
     top: 50%;
@@ -213,12 +215,12 @@
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-  .fig-responsive{
+  .fig-responsive {
     display: flex;
     flex-direction: column;
   }
 
-  .figures-grid-container{
+  .figures-grid-container {
     margin-left: 2%;
     margin-right: 4%;
   }
@@ -250,7 +252,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('src/idk.jpg');
+  background-image: url("src/idk.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.5;

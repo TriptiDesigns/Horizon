@@ -202,6 +202,7 @@ a {
 
   .logo {
     padding: 0;
+    width: 15px;
   }
 }
 
@@ -214,6 +215,11 @@ a {
   .cta h4 {
     padding: 12px 20px;
     font-size: 15px;
+  }
+
+  .logo {
+    padding: 0;
+    width: 5px;
   }
 }
 
