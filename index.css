@@ -255,13 +255,32 @@
   margin-bottom: 10vw;
 }
 
+/* Grid Section Styles */
+
+#three-by-three-grid {
+  background-color: transparent;  
+}
+
 #three-by-three-grid .container .row .outcomes-head {
   font-size: 1.5vw;
+  color: var(--soft-beige);  
+  padding-right: 30%;
+  font-family: var(--ff-neue-medium);
+}
+
+#three-by-three-grid .card {
+  background-color: transparent;  
+  border: none;  
+}
+
+#three-by-three-grid .card-title {
+  color: var(--soft-beige);  
 }
 
 #three-by-three-grid .card-text {
   font-family: var(--ff-neue-light);
   letter-spacing: 0.05vw;
+  color: var(--soft-beige);  
 }
 
 #three-by-three-grid .cta {
