@@ -74,17 +74,59 @@
   transition: transform 0.2s;
   background-color: #111111;
 }
+
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .card-body {
   padding: 20px;
 }
+
 .card-text,
 .card-title {
   color: var(--soft-beige);
 }
+
+/* Grid Section Styles */
+
+#three-by-three-grid {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10vw;
+}
+
+#three-by-three-grid {
+  background-color: transparent;  
+}
+
+#three-by-three-grid .container .row .outcomes-head {
+  font-size: 4vw;
+  color: var(--soft-beige);
+  font-family: var(--ff-neue-medium);
+}
+
+#three-by-three-grid .card {
+  background-color: transparent;  
+  border: none;  
+}
+
+#three-by-three-grid .card-title {
+  color: var(--soft-beige);  
+}
+
+#three-by-three-grid .card-text {
+  font-family: var(--ff-neue-light);
+  letter-spacing: 0.05vw;
+  color: var(--soft-beige);  
+}
+
+#three-by-three-grid .cta {
+  margin-top: 3vw;
+}
+
 
 /* Overlay Section */
 #overlay-section {
