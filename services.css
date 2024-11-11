@@ -1,0 +1,212 @@
+:root {
+    --charcoal-black: #111111;
+    --dark-grey: #585757;
+    --soft-beige: #f5ece4;
+    --vibrant-orange: #fc6a0a;
+    --bright-red: #e74504;
+    --eerie-black: #1f1f1f;
+
+    /* Typography */
+    --ff-neue-black: "neue-black", sans-serif;
+    --ff-neue-bold: "neue-bold", sans-serif;
+    --ff-neue-light: "neue-light", sans-serif;
+    --ff-neue-medium: "neue-medium", sans-serif;
+    --ff-neue-roman: "neue-roman", sans-serif;
+    --ff-neue-thin: "neue-thin", sans-serif;
+}
+
+/* Reset Properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-neue-medium);
+    color: var(--soft-beige);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    background-color: var(--charcoal-black);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--soft-beige);
+}
+
+/* Navbar CSS */
+
+#navbar {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 1vw 3vw;
+    background-color: var(--charcoal-black);
+}
+
+.menu {
+    display: flex;
+    padding: 3vw 2.5vw 1vw 2.5vw;
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+
+.logo {
+    padding: 0 3vw;
+}
+
+.cta h4 {
+    position: relative;
+    padding: 15px 25px;
+    border: 2px solid #fc6b0a78;
+    border-radius: 50px;
+    font-weight: 550;
+    font-size: 17px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.cta h4 a {
+    position: relative;
+    z-index: 9;
+}
+
+.cta h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--vibrant-orange);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.cta h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.cta h4:hover a {
+    color: var(--charcoal-black);
+}
+
+.menu p a {
+    color: var(--soft-beige);
+}
+
+.menu p a:hover {
+    color: var(--vibrant-orange);
+    transition: 0.5s ease;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+    position: relative;
+}
+
+.hero-heading {
+    font-family: var(--ff-neue-medium);
+    font-size: 3vw;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    max-width: 90%;
+}
+
+.hero-emoji {
+    display: inline-block;
+    transform: scale(0.8);
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+.services-section {
+    padding: 5vw 4vw;
+    position: relative;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6rem;
+}
+
+.services-title {
+    font-family: var(--ff-neue-black);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 50%;
+}
+
+.talk-badge {
+    width: 100px;
+    height: 100px;
+    background-color: var(--soft-beige);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.talk-badge span {
+    color: var(--charcoal-black);
+    font-family: var(--ff-neue-bold);
+    font-size: 1.2rem;
+}
+
+.services-subtitle {
+    font-family: var(--ff-neue-medium);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+.service-item {
+    font-family: var(--ff-neue-light);
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.onboarding-section {
+    padding: 4rem;
+    text-align: right;
+}
+
+.onboarding-title {
+    font-family: var(--ff-neue-black);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.journey-text {
+    font-family: var(--ff-neue-light);
+    color: var(--vibrant-orange);
+    font-size: 1rem;
+}
