@@ -52,7 +52,7 @@
   object-fit: cover;
 }
 
-/* Figures Grid CSS */
+/* Journey timeline CSS */
 
 #hero-cards {
   background: var(--eerie-black);
@@ -99,7 +99,7 @@
 }
 
 #three-by-three-grid {
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 #three-by-three-grid .container .row .outcomes-head {
@@ -109,24 +109,23 @@
 }
 
 #three-by-three-grid .card {
-  background-color: transparent;  
-  border: none;  
+  background-color: transparent;
+  border: none;
 }
 
 #three-by-three-grid .card-title {
-  color: var(--soft-beige);  
+  color: var(--soft-beige);
 }
 
 #three-by-three-grid .card-text {
   font-family: var(--ff-neue-light);
   letter-spacing: 0.05vw;
-  color: var(--soft-beige);  
+  color: var(--soft-beige);
 }
 
 #three-by-three-grid .cta {
   margin-top: 3vw;
 }
-
 
 /* Overlay Section */
 #overlay-section {
@@ -142,7 +141,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('src/idk.jpg'); /* Replace with your image path */
+  background-image: url("src/idk.jpg"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   opacity: 0.5; /* Adjust opacity to control image transparency */
@@ -205,7 +204,7 @@
   cursor: pointer;
   font-size: 1.5rem;
   border-radius: 50%;
-  z-index: 20; 
+  z-index: 20;
 }
 
 .carousel__control--prev {
@@ -214,4 +213,105 @@
 
 .carousel__control--next {
   right: 10px;
+}
+
+@media (max-width: 1440px) {
+  #hero {
+    height: 45vh;
+  }
+
+  #hero h1 {
+    font-size: 6vw;
+    line-height: 6.5vw;
+  }
+
+  #hero p {
+    font-size: 2.5vw;
+  }
+
+  #hero p span {
+    font-size: 1vw;
+    padding: 0.8vw 2vw;
+  }
+
+  .home-video-container video {
+    position: relative;
+    width: 100%;
+    border-radius: 35px;
+    margin-top: 4vw;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* For smaller devices like phones (screen width <= 768px) */
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 30vh;
+  }
+
+  #hero h1 {
+    font-size: 5.8vw;
+    line-height: 5.8vw;
+  }
+
+  #hero p {
+    font-size: 2vw;
+  }
+
+  #hero p span {
+    font-size: 1vw;
+    padding: 0.8vw 2vw;
+  }
+
+  .home-video-container video {
+    position: relative;
+    width: 100%;
+    border-radius: 35px;
+    margin-top: 3vw;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* For very small devices like extra small phones (screen width <= 480px) */
+@media screen and (max-width: 480px) {
+  #hero {
+    height: 25vh;
+  }
+
+  #hero h1 {
+    font-size: 5.5vw;
+    line-height: 5vw;
+  }
+
+  #hero p {
+    font-size: 3vw;
+  }
+
+  #hero p span {
+    font-size: 1vw;
+    padding: 0.8vw 2vw;
+  }
+
+  .home-video-container video {
+    position: relative;
+    width: 100%;
+    border-radius: 35px;
+    margin-top: 2vw;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
