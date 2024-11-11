@@ -1,90 +1,95 @@
-@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 /* Hero Section CSS */
 
 #hero {
-   height: 50vh; 
-   width: 100%;
-   padding: 4.5vw 6vw;
-   border-bottom: solid 1px var(--dark-grey);
+  height: auto;
+  width: 100%;
+  padding: 5vw 6vw 10vw;
+  border-bottom: solid 1px var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero h1 {
-    font-size: 3.4vw;
-    text-align: center;
-    font-family: var(--ff-neue-light);
-    letter-spacing: 0.03vw;
-    background: -webkit-linear-gradient(#F5ECE4, #585757);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3.4vw;
+  text-align: center;
+  font-family: var(--ff-neue-light);
+  letter-spacing: 0.03vw;
+  background: -webkit-linear-gradient(#f5ece4, #585757);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 90%;
 }
 
 /* Work/Result Section CSS */
 
 #work {
-    padding: 4vw 6vw;
-    border-bottom: solid 1px var(--dark-grey);
+  padding: 4vw 6vw;
+  border-bottom: solid 1px var(--dark-grey);
 }
 
-.work1, .work2 {
-    margin-bottom: 8vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
+.work1,
+.work2 {
+  margin-bottom: 8vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
 }
 
 .left {
-    flex: 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .right {
-    flex: 0 0 70%;
+  flex: 0 0 70%;
 }
 
 .left p {
-    font-size: 1.1vw;
-    color: var(--soft-beige);
-    opacity: 0.8;
+  font-size: 1.1vw;
+  color: var(--soft-beige);
+  opacity: 0.8;
 }
 
 .right h2 {
-    font-size: 3vw;
-    margin-bottom: 0.7vw;
-    font-family: var(--ff-neue-medium);
+  font-size: 3vw;
+  margin-bottom: 0.7vw;
+  font-family: var(--ff-neue-medium);
 }
 
 .right p:first-of-type {
-    font-size: 1.3vw;
-    color: var(--vibrant-orange);
-    opacity: 0.8;
-    margin-bottom: 1.5vw;
+  font-size: 1.3vw;
+  color: var(--vibrant-orange);
+  opacity: 0.8;
+  margin-bottom: 1.5vw;
 }
 
 .right p:last-of-type {
-    font-size: 1.2vw;
-    line-height: 1.5;
-    margin-bottom: 3vw;
-    font-family: var(--ff-neue-light);
-    letter-spacing: 0.05vw;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  margin-bottom: 3vw;
+  font-family: var(--ff-neue-light);
+  letter-spacing: 0.05vw;
 }
 
 .images {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
-    margin-top: 2vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  margin-top: 2vw;
 }
 
 .images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .images img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* Marquee Section CSS */
@@ -92,108 +97,265 @@
 /* Hero Section */
 
 .hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .hero h1 {
-    font-size: 5vw;
-    margin-bottom: 1vw;
-    font-family: var(--ff-neue-medium);
+  font-size: 5vw;
+  margin-bottom: 1vw;
+  font-family: var(--ff-neue-medium);
 }
 
 .hero p {
-    font-size: 1.5vw;
-    margin-bottom: 2vw;
-    color: var(--dark-grey);
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  color: var(--dark-grey);
 }
 
 .cta h4 {
-    position: relative;
-    padding: 15px 25px;
-    border: 2px solid #fc6b0a78;
-    border-radius: 50px;
-    font-weight: 550;
-    font-size: 17px;
-    transition: all ease 0.4s;
-    overflow: hidden;
-}
-
-.cta h4 a {
-    position: relative;
-    z-index: 9;
+  position: relative;
+  padding: 15px 25px;
+  border: 2px solid #fc6b0a78;
+  border-radius: 50px;
+  font-weight: 550;
+  font-size: 3.5vw;
+  transition: all ease 0.4s;
+  overflow: hidden;
 }
 
 .cta h4::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: var(--vibrant-orange);
-    left: 0;
-    bottom: -100%;
-    border-radius: 50%;
-    transition: all ease 0.4s;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--vibrant-orange);
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
 }
 
 .cta h4:hover::after {
-    bottom: 0;
-    border-radius: 0;
+  bottom: 0;
+  border-radius: 0;
 }
 
 .cta h4:hover a {
-    color: var(--charcoal-black);
+  color: var(--charcoal-black);
 }
 
 /* Marquee Section */
 
+.marquee-box {
+  height: 38vh;
+  width: 100%;
+  position: relative;
+}
+
 .marquee-container {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .marquee {
-    white-space: nowrap;
-    display: flex;
-    overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
 }
 
 .marquee-content {
-    display: flex;
-    animation: marquee 60s linear infinite;
-    padding: 0.4vw 0;
+  display: flex;
+  animation: marquee 70s linear infinite;
+  padding: 0.5vw 0;
 }
 
 .marquee-content span {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 .marquee-reverse .marquee-content {
-    animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 .marquee-item {
-    margin: 0 20px;
-    color: var(--dark-grey);
+  margin: 0 15px;
+  color: var(--dark-grey);
 }
 
 .active {
-    color: var(--soft-beige);
+  color: var(--soft-beige);
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #hero {
+    padding: 6vw 4vw;
+  }
+
+  #hero h1 {
+    font-size: 6vw;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    padding: 8vw 4vw;
+  }
+
+  #hero h1 {
+    font-size: 8vw;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #work {
+    padding: 6vw 4vw;
+  }
+
+  .work1,
+  .work2 {
+    margin-bottom: 10vw;
+  }
+
+  .left {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .left p {
+    font-size: 1.6vw;
+  }
+
+  .right {
+    flex: 0 0 100%;
+  }
+
+  .right h2 {
+    font-size: 4.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .right p:first-of-type {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .right p:last-of-type {
+    font-size: 1.8vw;
+    margin-bottom: 4vw;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .left p {
+    font-size: 2.5vw;
+  }
+
+  .right h2 {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+
+  .right p:first-of-type {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  .right p:last-of-type {
+    font-size: 2.5vw;
+    margin-bottom: 6vw;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero h1 {
+    font-size: 7vw;
+    margin-bottom: 2vw;
+  }
+  .hero p {
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+  }
+  .cta h4 {
+    font-size: 4.5vw;
+  }
+  .marquee-box {
+    height: 30vh;
+  }
+  .marquee-content span {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 30vh;
+  }
+  .hero h1 {
+    font-size: 7vw;
+    margin-bottom: 2vw;
+  }
+  .hero p {
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+  }
+  .cta h4 {
+    font-size: 4.5vw;
+  }
+  .marquee-box {
+    height: 20vh;
+  }
+  .marquee-content span {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 20vh;
+  }
+  .hero h1 {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+  }
+  .hero p {
+    font-size: 3.5vw;
+    margin-bottom: 4vw;
+  }
+  .cta h4 {
+    font-size: 5.5vw;
+  }
+  .marquee-box {
+    height: 15vh;
+  }
+  .marquee-content span {
+    font-size: 4vw;
+  }
+}
