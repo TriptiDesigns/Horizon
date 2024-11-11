@@ -56,7 +56,7 @@ a {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  padding: 0 4vw;
+  padding: 1vw 4vw;
   background-color: var(--charcoal-black);
 }
 
@@ -128,11 +128,12 @@ a {
 .hamburger span {
   display: block;
   width: 25px;
-  height: 2px; 
-  margin: 5px auto; 
+  height: 2px;
+  margin: 5px auto;
   background: var(--soft-beige);
   transition: all 0.3s ease-in-out;
-  border-radius: 1px; }
+  border-radius: 1px;
+}
 
 /* Mobile Menu Styles */
 .mobile-menu {
@@ -172,32 +173,33 @@ a {
   .hamburger {
     display: block;
   }
-  
-  .menu, .cta {
+
+  .menu,
+  .cta {
     display: none;
   }
-  
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
+
   .mobile-menu p {
     font-size: 18px;
     margin: 10px 0;
   }
-  
+
   .mobile-menu .cta {
     display: block;
     margin-top: 20px;
   }
-  
+
   #navbar {
     padding: 10px 20px;
   }
-  
+
   .logo {
     padding: 0;
   }
@@ -208,7 +210,7 @@ a {
   .mobile-menu p {
     font-size: 16px;
   }
-  
+
   .cta h4 {
     padding: 12px 20px;
     font-size: 15px;
@@ -277,7 +279,7 @@ a {
   .footer h1 {
     font-size: 3.5rem;
   }
-  
+
   .footer .location-text {
     font-size: 1.5rem;
   }
@@ -303,7 +305,7 @@ a {
   .footer .location-text {
     font-size: 1.25rem;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;

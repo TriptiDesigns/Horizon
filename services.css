@@ -1,99 +1,161 @@
-@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+/* Hero Section CSS */
 
 .hero-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 4rem;
-    position: relative;
+  padding-top: 8vw;
+  height: 80vh;
+  width: 100%;
+  position: relative;
 }
 
-.hero-heading {
-    font-family: var(--ff-neue-medium);
-    font-size: 3vw;
-    text-align: center;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    max-width: 90%;
+.hero-title {
+  font-size: 3vw;
+  font-family: var(--ff-neue-medium);
+  color: var(--soft-beige);
+  line-height: 1.5;
 }
 
-.hero-emoji {
-    display: inline-block;
-    transform: scale(0.8);
-    margin: 0 0.5rem;
-    vertical-align: middle;
+.hero-title span {
+  font-size: 2.8vw;
 }
 
-.services-section {
-    padding: 5vw 4vw;
-    position: relative;
+.hero-buttons .btn {
+  color: var(--vibrant-orange);
+  font-family: var(--ff-neue-light);
+  background-color: #ff660022;
+  border-radius: 2vw;
+  padding: 0.3vw 1vw;
+  border: solid 0.2px var(--vibrant-orange);
+  margin: 0.5vw 0.9vw;
 }
 
-.services-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 6rem;
+.services-list p {
+  margin-top: 30px;
+  font-size: 1.5vw;
+  color: var(--dark-grey);
+  font-family: var(--ff-neue-light);
 }
 
-.services-title {
-    font-family: var(--ff-neue-black);
-    font-size: clamp(2.5rem, 4vw, 4rem);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    max-width: 50%;
+/* Stats Testimonial Section CSS */
+
+/* Selected Work Section CSS */
+/* Section Styling */
+#selected-work-section {
+  position: relative;
+  height: 100vh;
+  background: url("https://placehold.co/600x400") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--soft-beige);
 }
 
-.talk-badge {
-    width: 100px;
-    height: 100px;
-    background-color: var(--soft-beige);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Title */
+.section-title {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.talk-badge span {
-    color: var(--charcoal-black);
-    font-family: var(--ff-neue-bold);
-    font-size: 1.2rem;
+/* Button Styling */
+.btn-primary {
+  background-color: var(--vibrant-orange);
+  color: var(--soft-beige);
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
-.services-subtitle {
-    font-family: var(--ff-neue-medium);
-    font-size: 2rem;
-    margin-bottom: 2rem;
+.btn-primary:hover {
+  background-color: #d55a07;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding-top: 4rem;
+/* FAQ Section CSS */
+
+#faq-section {
+  background-color: var(--charcoal-black);
+  color: var(--soft-beige);
+  text-align: center;
+  padding: 7vw 2vw 13vw;
+  width: 100%;
 }
 
-.service-item {
-    font-family: var(--ff-neue-light);
-    font-size: 1.1rem;
-    opacity: 0.9;
+#faq-section h2 {
+  font-size: 4vw;
+  margin-bottom: 5px;
 }
 
-.onboarding-section {
-    padding: 4rem;
-    text-align: right;
+#faq-section p {
+  font-size: 1.5vw;
+  color: var(--dark-grey);
+  margin-bottom: 25px;
 }
 
-.onboarding-title {
-    font-family: var(--ff-neue-black);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.faq-tags span {
+  color: var(--vibrant-orange);
+  font-family: var(--ff-neue-light);
+  background-color: #ff660022;
+  border-radius: 2vw;
+  padding: 0.3vw 1vw;
+  border: solid 0.2px var(--vibrant-orange);
+  margin: 0.5vw 1vw;
+  display: inline-block;
 }
 
-.journey-text {
-    font-family: var(--ff-neue-light);
-    color: var(--vibrant-orange);
-    font-size: 1rem;
+.faq {
+  width: 80%;
+  margin: 3vw auto 0;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 10px;
+}
+
+.faq-question span {
+  font-size: 1.7vw;
+}
+
+.faq-toggle {
+  background: none;
+  border: none;
+  color: var(--soft-beige);
+  font-size: 1.7vw;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.faq-answer {
+  text-align: left;
+  display: none;
+  padding: 0.5vw 0.8vw;
+  color: var(--dark-grey);
+  font-size: 0.9rem;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
 }
