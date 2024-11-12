@@ -1,154 +1,169 @@
 @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
-/* Hero Section CSS */
-
+/* Hero Section */
 .hero-section {
-  padding-top: 8vw;
-  height: 80vh;
-  width: 100%;
-  position: relative;
+  min-height: 100vh;
+  padding: 120px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-title {
-  font-size: 3vw;
-  font-family: var(--ff-neue-medium);
-  color: var(--soft-beige);
-  line-height: 1.5;
-}
-
-.hero-title span {
-  font-size: 2.8vw;
+  font-size: clamp(24px, 3vw, 48px);
+  margin-bottom: 30px;
+  line-height: 1.3;
 }
 
 .hero-buttons .btn {
   color: var(--vibrant-orange);
-  font-family: var(--ff-neue-light);
-  background-color: #ff660022;
-  border-radius: 2vw;
-  padding: 0.3vw 1vw;
-  border: solid 0.2px var(--vibrant-orange);
-  margin: 0.5vw 0.9vw;
+  background-color: rgba(255, 102, 0, 0.1);
+  border: 1px solid var(--vibrant-orange);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: clamp(14px, 1.5vw, 18px);
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background-color: var(--vibrant-orange);
+  color: var(--soft-beige);
+}
+
+.services-list {
+  margin-top: 40px;
 }
 
 .services-list p {
-  margin-top: 30px;
-  font-size: 1.5vw;
   color: var(--dark-grey);
-  font-family: var(--ff-neue-light);
+  font-size: clamp(16px, 1.5vw, 24px);
 }
 
-/* Stats Testimonial Section CSS */
+/* [Previous CSS remains the same until Selected Work Section] */
 
-/* Selected Work Section CSS */
-/* Section Styling */
+/* Selected Work Section */
 #selected-work-section {
-  position: relative;
-  height: 100vh;
-  background: url("https://placehold.co/600x400") no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url("https://placehold.co/600x400"); /* Placeholder background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: var(--soft-beige);
+  position: relative;
 }
 
-/* Title */
-.section-title {
-  font-size: 3.5vw;
-  font-weight: bold;
-  margin-bottom: 20px;
+/* Add overlay to ensure text is readable */
+#selected-work-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.7); /* Semi-transparent overlay */
+  z-index: 1;
 }
 
-/* Button Styling */
+/* Ensure content stays above overlay */
+#selected-work-section .section-title,
+#selected-work-section .btn-primary {
+  position: relative;
+  z-index: 2;
+}
+
 .btn-primary {
   background-color: var(--vibrant-orange);
   color: var(--soft-beige);
-  padding: 12px 24px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #d55a07;
+  background-color: #ff8533;
 }
 
-/* FAQ Section CSS */
-
+/* FAQ Section */
 #faq-section {
-  background-color: var(--charcoal-black);
-  color: var(--soft-beige);
+  padding: 80px 20px;
   text-align: center;
-  padding: 7vw 2vw 13vw;
-  width: 100%;
 }
 
 #faq-section h2 {
-  font-size: 4vw;
-  margin-bottom: 5px;
+  font-size: clamp(32px, 4vw, 64px);
+  margin-bottom: 10px;
 }
 
-#faq-section p {
-  font-size: 1.5vw;
+#faq-section > p {
   color: var(--dark-grey);
-  margin-bottom: 25px;
+  font-size: clamp(16px, 1.5vw, 24px);
+  margin-bottom: 30px;
+}
+
+.faq-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
 .faq-tags span {
   color: var(--vibrant-orange);
-  font-family: var(--ff-neue-light);
-  background-color: #ff660022;
-  border-radius: 2vw;
-  padding: 0.3vw 1vw;
-  border: solid 0.2px var(--vibrant-orange);
-  margin: 0.5vw 1vw;
-  display: inline-block;
+  background-color: rgba(255, 102, 0, 0.1);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--vibrant-orange);
 }
 
 .faq {
-  width: 80%;
-  margin: 3vw auto 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .faq-item {
+  border-bottom: 1px solid var(--dark-grey);
   margin-bottom: 15px;
-  border-bottom: 1px solid #333;
 }
 
 .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
   cursor: pointer;
-  padding: 15px 10px;
 }
 
 .faq-question span {
-  font-size: 1.7vw;
+  font-size: clamp(16px, 1.7vw, 24px);
+  text-align: left;
 }
 
 .faq-toggle {
   background: none;
   border: none;
   color: var(--soft-beige);
-  font-size: 1.7vw;
+  font-size: 24px;
   cursor: pointer;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .faq-answer {
-  text-align: left;
   display: none;
-  padding: 0.5vw 0.8vw;
-  color: var(--dark-grey);
-  font-size: 0.9rem;
+  padding: 0 0 15px;
+  text-align: left;
 }
 
 .faq-answer p {
+  color: var(--dark-grey);
+  font-size: 16px;
   margin: 0;
 }
 
@@ -158,4 +173,217 @@
 
 .faq-item.active .faq-toggle {
   transform: rotate(45deg);
+}
+
+/* Footer */
+.footer {
+  padding: 80px 20px;
+  background-color: var(--charcoal-black);
+}
+
+.footer h1 {
+  font-size: clamp(28px, 3vw, 48px);
+  margin-bottom: 30px;
+}
+
+.footer h3 {
+  font-size: clamp(16px, 1.2vw, 20px);
+  margin-bottom: 20px;
+  color: var(--dark-grey);
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--vibrant-orange);
+}
+
+.location-text {
+  color: var(--soft-beige);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  border-top: 1px solid var(--dark-grey);
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  color: var(--dark-grey);
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Navbar Mobile */
+  .menu, .cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu p {
+    margin: 20px 0;
+  }
+
+  .mobile-menu .cta {
+    display: block;
+    margin-top: 30px;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  /* Footer Mobile */
+  .footer [class*="col-"] {
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Smaller screens adjustments */
+  #navbar {
+    padding: 15px 20px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .faq-tags span {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+}
+
+/* Bootstrap Grid Overrides */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12, .col-md-8, .col-md-4, .col-6, .col-md-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-inline-block {
+  display: inline-block;
 }

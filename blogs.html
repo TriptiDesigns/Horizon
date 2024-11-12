@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
-    <title>Agency Horizon | Beyond the Horizon of Innovation</title>
-    <meta name="title" content="Agency Horizon" />
-    <meta name="description" content="A marketing agency's website." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Style Sheet Link -->
-    <link rel="stylesheet" href="./blogs.css" />
-    <link rel="stylesheet" href="./style.css" />
+  <!-- Primary Meta Tags -->
+  <title>Agency Horizon | Beyond the Horizon of Innovation</title>
+  <meta name="title" content="Agency Horizon" />
+  <meta name="description" content="A marketing agency's website." />
 
-    <!-- Custom Font Link -->
-    <link rel="stylesheet" href="./Neue Haas Grotesk Display Pro/font.css" />
+  <!-- Style Sheet Link -->
+  <link rel="stylesheet" href="./blogs.css" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./src/Agency Horizon - Favicon.svg"
-      type="image/svg"
-    />
-  </head>
+  <!-- Custom Font Link -->
+  <link rel="stylesheet" href="./Neue Haas Grotesk Display Pro/font.css" />
 
-  <body>
-    <!-- Navbar Section -->
-    <nav id="navbar">
-      <div class="logo">
-        <h2>
-          <a href="./index.html"
-            ><img
-              src="./src/Agency Horizon - Logo.svg"
-              alt="Logo"
-              height="30px"
-          /></a>
-        </h2>
-      </div>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./src/Agency Horizon - Favicon.svg" type="image/svg" />
+</head>
 
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+<body>
+  <!-- Navbar Section -->
+  <nav id="navbar">
+    <div class="logo">
+      <h2>
+        <a href="./index.html"><img src="./src/Agency Horizon - Logo.svg" alt="Logo" height="30px" /></a>
+      </h2>
+    </div>
 
-      <div class="menu">
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./work.html">Work</a></p>
-        <p><a href="./services.html">Services</a></p>
-        <p><a href="./blogs.html">Blogs</a></p>
-        <p><a href="./contact.html">Contact</a></p>
-      </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
+    <div class="menu">
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./work.html">Work</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./blogs.html">Blogs</a></p>
+      <p><a href="./contact.html">Contact</a></p>
+    </div>
+
+    <div class="cta">
+      <h4><a href="">Book A Call</a></h4>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./work.html">Work</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./services.html">Blogs</a></p>
+      <p><a href="./contact.html">Contact</a></p>
       <div class="cta">
         <h4><a href="">Book A Call</a></h4>
       </div>
-
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./work.html">Work</a></p>
-        <p><a href="./services.html">Services</a></p>
-        <p><a href="./services.html">Blogs</a></p>
-        <p><a href="./contact.html">Contact</a></p>
-        <div class="cta">
-          <h4><a href="">Book A Call</a></h4>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container text-center">
-      <h1 class="text">Blog Page is Under Development &hearts;</h1>
     </div>
+  </nav>
 
-    <!-- JavaScript for hamburger menu -->
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const body = document.querySelector("body");
+  <div class="container text-center">
+    <h1 class="text">Blog Page is Under Development &hearts;</h1>
+  </div>
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-        body.style.overflow = mobileMenu.classList.contains("active")
-          ? "hidden"
-          : "auto";
+  <!-- JavaScript for hamburger menu -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const body = document.querySelector("body");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      mobileMenu.classList.toggle("active");
+      body.style.overflow = mobileMenu.classList.contains("active")
+        ? "hidden"
+        : "auto";
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = document.querySelectorAll(".mobile-menu a");
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        body.style.overflow = "auto";
       });
+    });
+  </script>
+</body>
 
-      // Close mobile menu when clicking on a link
-      const mobileLinks = document.querySelectorAll(".mobile-menu a");
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          mobileMenu.classList.remove("active");
-          body.style.overflow = "auto";
-        });
-      });
-    </script>
-  </body>
 </html>
