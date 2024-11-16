@@ -1,4 +1,4 @@
-@import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("node_modules\bootstrap\dist\css\bootstrap.min.css");
 
 /* Hero Section CSS */
 
@@ -198,6 +198,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -295,20 +296,25 @@
   .hero {
     height: 50vh;
   }
+
   .hero h1 {
     font-size: 7vw;
     margin-bottom: 2vw;
   }
+
   .hero p {
     font-size: 2.5vw;
     margin-bottom: 3vw;
   }
+
   .cta h4 {
     font-size: 4.5vw;
   }
+
   .marquee-box {
     height: 30vh;
   }
+
   .marquee-content span {
     font-size: 3vw;
   }
@@ -318,20 +324,25 @@
   .hero {
     height: 30vh;
   }
+
   .hero h1 {
     font-size: 7vw;
     margin-bottom: 2vw;
   }
+
   .hero p {
     font-size: 2.5vw;
     margin-bottom: 3vw;
   }
+
   .cta h4 {
     font-size: 4.5vw;
   }
+
   .marquee-box {
     height: 20vh;
   }
+
   .marquee-content span {
     font-size: 3vw;
   }
@@ -341,20 +352,25 @@
   .hero {
     height: 20vh;
   }
+
   .hero h1 {
     font-size: 7vw;
     margin-bottom: 3vw;
   }
+
   .hero p {
     font-size: 3.5vw;
     margin-bottom: 4vw;
   }
+
   .cta h4 {
     font-size: 5.5vw;
   }
+
   .marquee-box {
     height: 15vh;
   }
+
   .marquee-content span {
     font-size: 4vw;
   }

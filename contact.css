@@ -1,4 +1,4 @@
-@import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("node_modules\bootstrap\dist\css\bootstrap.min.css");
 
 /* Contact Header CSS */
 
@@ -136,7 +136,8 @@
 
 @media screen and (max-width: 992px) {
   .menu {
-    display: none; /* Consider adding a hamburger menu for mobile */
+    display: none;
+    /* Consider adding a hamburger menu for mobile */
   }
 
   .logo {
@@ -291,11 +292,13 @@
 
 /* Improve Touch Targets for Mobile */
 @media (hover: none) {
+
   .contact-form input,
   .contact-form textarea,
   .contact-form button,
   .menu p a,
   .cta h4 {
-    min-height: 44px; /* Minimum touch target size */
+    min-height: 44px;
+    /* Minimum touch target size */
   }
 }
