@@ -119,7 +119,8 @@
 }
 
 #three-by-three-grid .cta {
-  margin-top: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
 }
 
 /* Overlay Section */

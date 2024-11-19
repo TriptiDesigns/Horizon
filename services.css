@@ -45,7 +45,7 @@
   min-height: 100vh;
   padding: 80px 20px;
   text-align: center;
-  background-image: url("https://placehold.co/600x400");
+  background-image: url("./src/screen.jpg");
   /* Placeholder background */
   background-size: cover;
   background-position: center;
@@ -101,7 +101,7 @@
   margin-bottom: 10px;
 }
 
-#faq-section>p {
+#faq-section > p {
   color: var(--dark-grey);
   font-size: clamp(16px, 1.5vw, 24px);
   margin-bottom: 30px;
@@ -223,7 +223,6 @@
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-
   /* Navbar Mobile */
   .menu,
   .cta {
@@ -278,7 +277,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
   /* Smaller screens adjustments */
   #navbar {
     padding: 15px 20px;
